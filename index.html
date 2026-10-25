@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My OWN MUSIC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Bagian Navigasi -->
+  <header>
+    <!-- Mobile Navigasi -->
+    <nav>
+      <h1>My OWN <span>Music</span></h1>
+      <!-- Ini untuk navigasi mobile dia jadi di bagian side-bar -->
+      <button style="display: none;" class="button-burger" type="button"><svg style="width: 30px; height: 30px;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 7L7 7M20 7L11 7" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17H17M4 17L13 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 12H7L20 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg></button>
+      <!-- Navigasi  -->
+    </nav>
+    
+    <!-- Desktop Navigastion -->
+    <nav>
+      <!-- Home Navigasi Logo-->
+      <a  class="icon-tooltip" href="index.html">
+        <svg style="width: 30px; height: 30px;" height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M392.859,6.031L123.288,66.938l0.91,1.692l-0.782-0.51L0,256.273l26.488,17.374l4.457-6.804v139.261 l254.107,99.866l209.756-104.105V228.575L512,221.753L392.859,6.031z M270.335,466.165l-91.76-36.065V325.503l-62.872-18.629v98.51 l-53.085-20.866V218.561l78.208-119.232l120.232,221.945l3.856-1.519l5.421-2.147V466.165z M463.136,382.226l-164.858,81.829 V306.52l164.858-65.383V382.226z"></path> </g> </g></svg>
+        <span class="tool-tip" aria-label="home">Home</span>
+      </a>
+      <!-- music music baru -->
+      <a class="icon-tooltip" href="rekomendasi.html">
+        <img src="asset/vinyl.png" alt="" style="width: 30px; height: 30px;" >
+        <span class="tool-tip" aria-label="browse">Browse</span>
+      </a>
+      <!-- Search Bar -->
+      <form action=""><!--Sebagai wadah input yang nanti di berikan ke server-->
+        <div class="search-container">
+          <!-- logo search -->
+           <label class="icon-tooltip-search" for="search-bar">
+              <svg  style="width: 20px; height: 20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+               <span class="tool-tip" aria-label="search">search</span>
+           </label>
+             
+            
+          
+          
+          <!-- Input search -->
+          <input  type="text" id="search-bar" placeholder="Cari lagu,artis,album, atau podcast?" aria-label="Cari lagu,artis,album, atau podcast?">  
+        </div>
+      </form>
+      
+      <!-- Playlist Bar Logo-->
+       <a class="icon-tooltip" href="playlist.html">
+        <img src="asset/folder.svg" alt="" style="width: 30px; height: 30px;">
+        <span class="tool-tip" aria-label="playlist">Playlist</span>
+      </a>
+    </nav>
+
+      <!-- Profile Bar Logo -->
+      <a class="icon-tooltip profile"  href="profile.html">
+        <svg style="width: 30px; height: 30px;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 7.063C16.5 10.258 14.57 13 12 13c-2.572 0-4.5-2.742-4.5-5.938C7.5 3.868 9.16 2 12 2s4.5 1.867 4.5 5.063zM4.102 20.142C4.487 20.6 6.145 22 12 22c5.855 0 7.512-1.4 7.898-1.857a.416.416 0 0 0 .09-.317C19.9 18.944 19.106 15 12 15s-7.9 3.944-7.989 4.826a.416.416 0 0 0 .091.317z" fill="#000000"></path></g></svg>
+        <span class="tool-tip" aria-label="profile">Profile</span>
+      </a>
+  </header>
+
+  <!-- Bagian utama atau mainnya -->
+   <main>
+      <section class="explore-mood">
+        <!-- Bagian intro  -->
+        <div class="intro">
+          <p>Explore your mood</p>
+          <h2>Find the compatible music for your moment</h2>
+          <p>Temukan music yang sesuai dengan mood mu</p>
+        </div>
+        <!-- Bagian mood card -->
+         <div class="container-card">
+            <div class="mood-card chill">
+              <!-- Icon -->
+              <svg class="icon-card" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 16.3529C22 19.4717 19.4416 22 16.2857 22H11M14.381 11.0272C14.9767 10.8191 15.6178 10.7059 16.2857 10.7059C16.9404 10.7059 17.5693 10.8147 18.1551 11.015M7.11616 13.6089C6.8475 13.5567 6.56983 13.5294 6.28571 13.5294C3.91878 13.5294 2 15.4256 2 17.7647C2 20.1038 3.91878 22 6.28571 22H7M7.11616 13.6089C6.88706 12.9978 6.7619 12.3369 6.7619 11.6471C6.7619 8.52827 9.32028 6 12.4762 6C15.4159 6 17.8371 8.19371 18.1551 11.015M7.11616 13.6089C7.68059 13.7184 8.20528 13.9374 8.66667 14.2426M18.1551 11.015C18.8381 11.2485 19.4623 11.6065 20 12.0614" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8 4.5C6.067 4.5 4.5 6.067 4.5 8C4.5 9.3962 5.31753 10.6015 6.5 11.1632M8 4.5C8.74362 4.5 9.43308 4.73191 10 5.12734M8 4.5C7.25638 4.5 6.56692 4.73191 6 5.12734M8 4.5C8.95365 4.5 9.81822 4.88141 10.4495 5.5M8 4.5C7.04635 4.5 6.18178 4.88141 5.55051 5.5M8 4.5C9.27316 4.5 10.3876 5.17979 11 6.19621" stroke="#000000" stroke-width="1.5"></path> <path d="M7.5 2V2.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2.5 7.5L2 7.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M11.3887 3.61133L11.1726 3.82739" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M3.82715 11.1729L3.61109 11.3889" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M3.82715 3.82715L3.61109 3.61109" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+              <p class="title-card">Chill</p>
+              <!-- Bagian bawah -->
+                <p class="desc-card">Rileks</p>
+                <!-- Icon masuk page sesuai kategori -->
+                  
+                  <div class="background-join">
+                    <svg class="join-card" fill="#000000" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25.468,14.508l-20.967,-0.008c-0.828,-0 -1.501,0.672 -1.501,1.499c-0,0.828 0.672,1.501 1.499,1.501l21.125,0.009c-0.107,0.159 -0.234,0.306 -0.377,0.439c-3.787,3.502 -9.68,8.951 -9.68,8.951c-0.608,0.562 -0.645,1.511 -0.083,2.119c0.562,0.608 1.512,0.645 2.12,0.083c-0,0 5.892,-5.448 9.68,-8.95c1.112,-1.029 1.751,-2.47 1.766,-3.985c0.014,-1.515 -0.596,-2.968 -1.688,-4.018l-9.591,-9.221c-0.596,-0.574 -1.547,-0.556 -2.121,0.041c-0.573,0.597 -0.555,1.547 0.042,2.121l9.591,9.221c0.065,0.063 0.127,0.129 0.185,0.198Z"></path><g id="Icon"></g></g></svg>
+                  </div>
+            </div>
+            <div class="mood-card focus">
+                <!-- Icon -->
+                <svg class="icon-card" height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M175.898,335.919c-3.812-25.66-27.679-43.357-53.33-39.546c-25.659,3.778-43.374,27.671-39.57,53.322 l18.12,122.236c3.804,25.65,27.671,43.365,53.33,39.554c25.651-3.795,43.357-27.662,39.562-53.33L175.898,335.919z"></path> <path class="st0" d="M389.438,296.373c-25.651-3.811-49.518,13.886-53.33,39.546l-18.121,122.236 c-3.786,25.667,13.911,49.535,39.571,53.33c25.65,3.812,49.518-13.903,53.33-39.554l18.12-122.236 C432.811,324.044,415.088,300.151,389.438,296.373z"></path> <path class="st0" d="M506.813,166.683l-11.106-21.231c-22.6-43.187-56.364-79.478-97.625-105.07 C356.864,14.799,307.997-0.009,256.003,0C204-0.009,155.132,14.799,113.914,40.382c-41.26,25.592-75.025,61.883-97.616,105.07 L5.192,166.683c-4.301,8.224-1.14,18.391,7.099,22.701l7.649,3.99c-7.952,24.315-12.322,50.262-12.322,77.247 c0.042,31.753,7.353,62.948,15.594,90.551c8.231,27.476,17.57,51.707,21.965,67.402l35.683-10.074 c-5.29-18.593-14.384-42.004-22.152-67.959c-7.767-25.87-14.055-53.98-14.004-79.919c0-20.791,3.034-40.838,8.621-59.803 l1.436,0.777c8.24,4.285,18.391,1.116,22.692-7.116l11.105-21.239c15.788-30.198,39.512-55.679,68.332-73.538 c28.828-17.859,62.567-28.136,99.112-28.144c36.536,0.008,70.284,10.286,99.112,28.144c28.813,17.858,52.536,43.34,68.324,73.538 l11.106,21.239c4.302,8.231,14.461,11.4,22.693,7.116l1.437-0.777c5.586,18.965,8.628,39.012,8.628,59.803 c0.042,25.938-6.237,54.049-14.012,79.919c-7.759,25.955-16.861,49.366-22.152,67.959l35.683,10.074 c4.395-15.695,13.734-39.926,21.966-67.402c8.24-27.602,15.559-58.798,15.592-90.551c0-26.986-4.37-52.932-12.322-77.247 l7.649-3.99C507.945,185.074,511.107,174.907,506.813,166.683z"></path> </g> </g></svg>
+                <p class="title-card">Focus</p>
+                <!-- Bagian bawah -->
+                    <p class="desc-card">Tetap Produktif</p>
+                    <!-- Icon masuk page sesuai kategori -->
+                     <div class="background-join">
+                      <svg class="join-card" fill="#000000" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25.468,14.508l-20.967,-0.008c-0.828,-0 -1.501,0.672 -1.501,1.499c-0,0.828 0.672,1.501 1.499,1.501l21.125,0.009c-0.107,0.159 -0.234,0.306 -0.377,0.439c-3.787,3.502 -9.68,8.951 -9.68,8.951c-0.608,0.562 -0.645,1.511 -0.083,2.119c0.562,0.608 1.512,0.645 2.12,0.083c-0,0 5.892,-5.448 9.68,-8.95c1.112,-1.029 1.751,-2.47 1.766,-3.985c0.014,-1.515 -0.596,-2.968 -1.688,-4.018l-9.591,-9.221c-0.596,-0.574 -1.547,-0.556 -2.121,0.041c-0.573,0.597 -0.555,1.547 0.042,2.121l9.591,9.221c0.065,0.063 0.127,0.129 0.185,0.198Z"></path><g id="Icon"></g></g></svg>
+                    </div>
+            </div>
+            <div class="mood-card happy">
+                  <!-- Icon -->
+                  <svg class="icon-card" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="5" stroke="#000000" stroke-width="1.5"></circle> <path d="M12 2V4" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M12 20V22" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 12L2 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M22 12L20 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path opacity="0.5" d="M19.7778 4.22266L17.5558 6.25424" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path opacity="0.5" d="M4.22217 4.22266L6.44418 6.25424" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path opacity="0.5" d="M6.44434 17.5557L4.22211 19.7779" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path opacity="0.5" d="M19.7778 19.7773L17.5558 17.5551" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                  <p class="title-card">Happy</p>
+                  <!-- Bagian bawah -->
+                    <p class="desc-card">Lebih bersemangat</p>
+                    <!-- Icon masuk page sesuai kategori -->
+                    <div class="background-join">
+                      <svg class="join-card" fill="#000000" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25.468,14.508l-20.967,-0.008c-0.828,-0 -1.501,0.672 -1.501,1.499c-0,0.828 0.672,1.501 1.499,1.501l21.125,0.009c-0.107,0.159 -0.234,0.306 -0.377,0.439c-3.787,3.502 -9.68,8.951 -9.68,8.951c-0.608,0.562 -0.645,1.511 -0.083,2.119c0.562,0.608 1.512,0.645 2.12,0.083c-0,0 5.892,-5.448 9.68,-8.95c1.112,-1.029 1.751,-2.47 1.766,-3.985c0.014,-1.515 -0.596,-2.968 -1.688,-4.018l-9.591,-9.221c-0.596,-0.574 -1.547,-0.556 -2.121,0.041c-0.573,0.597 -0.555,1.547 0.042,2.121l9.591,9.221c0.065,0.063 0.127,0.129 0.185,0.198Z"></path><g id="Icon"></g></g></svg>
+                    </div>
+              </div>
+             <div class="mood-card sleep">
+                <!-- Icon -->
+                <svg  class="icon-card" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.75C17.5858 2.75 17.25 2.41421 17.25 2C17.25 1.58579 17.5858 1.25 18 1.25H22C22.3034 1.25 22.5768 1.43273 22.6929 1.71299C22.809 1.99324 22.7449 2.31583 22.5304 2.53033L19.8107 5.25H22C22.4142 5.25 22.75 5.58579 22.75 6C22.75 6.41421 22.4142 6.75 22 6.75H18C17.6967 6.75 17.4232 6.56727 17.3071 6.28701C17.191 6.00676 17.2552 5.68417 17.4697 5.46967L20.1894 2.75H18ZM13.5 8.75C13.0858 8.75 12.75 8.41421 12.75 8C12.75 7.58579 13.0858 7.25 13.5 7.25H16.5C16.8034 7.25 17.0768 7.43273 17.1929 7.71299C17.309 7.99324 17.2449 8.31583 17.0304 8.53033L15.3107 10.25H16.5C16.9142 10.25 17.25 10.5858 17.25 11C17.25 11.4142 16.9142 11.75 16.5 11.75H13.5C13.1967 11.75 12.9232 11.5673 12.8071 11.287C12.691 11.0068 12.7552 10.6842 12.9697 10.4697L14.6894 8.75H13.5Z" fill="#000"></path> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#000"></path> </g></svg>
+                <p class="title-card">Sleep</p>
+                <!-- Bagian bawah -->
+                  <p class="desc-card">Lagu bersama malam</p>
+                  <!-- Icon masuk page sesuai kategori -->
+                
+                   <div class="background-join">
+                    <svg class="join-card" fill="#000000" viewBox="0 0 32 32" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25.468,14.508l-20.967,-0.008c-0.828,-0 -1.501,0.672 -1.501,1.499c-0,0.828 0.672,1.501 1.499,1.501l21.125,0.009c-0.107,0.159 -0.234,0.306 -0.377,0.439c-3.787,3.502 -9.68,8.951 -9.68,8.951c-0.608,0.562 -0.645,1.511 -0.083,2.119c0.562,0.608 1.512,0.645 2.12,0.083c-0,0 5.892,-5.448 9.68,-8.95c1.112,-1.029 1.751,-2.47 1.766,-3.985c0.014,-1.515 -0.596,-2.968 -1.688,-4.018l-9.591,-9.221c-0.596,-0.574 -1.547,-0.556 -2.121,0.041c-0.573,0.597 -0.555,1.547 0.042,2.121l9.591,9.221c0.065,0.063 0.127,0.129 0.185,0.198Z"></path><g id="Icon"></g></g></svg>
+                  </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="recently-played"></section>
+
+      <section class="trending-discover"></section>
+    
+   </main>
+
+</body>
+</html>
